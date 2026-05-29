@@ -1,0 +1,42 @@
+.app-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.read-to-her-btn {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(244, 192, 209, 0.5);
+  color: var(--text-main);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.read-to-her-btn:hover {
+  background: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(244, 192, 209, 0.2);
+}
+
+@media (max-width: 768px) {
+  .read-to-her-btn {
+    top: 1rem;
+    right: 1rem;
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+}

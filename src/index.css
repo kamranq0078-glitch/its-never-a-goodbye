@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  --blush-pink: #FBEAF0;
+  --blush-pink-dark: #F4C0D1;
+  --soft-lavender: #EEEDFE;
+  --warm-cream: #FAEEDA;
+  --sage-green: #E1F5EE;
+  
+  --text-main: #3a3238;
+  --text-muted: #756a70;
+  
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--warm-cream);
+  color: var(--text-main);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .serif {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+
+/* Animations */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Base sections */
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 3rem 1.5rem;
+  }
+}

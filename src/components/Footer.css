@@ -1,0 +1,52 @@
+.footer-section {
+  background-color: #fff;
+  min-height: 80vh;
+  z-index: 10;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.footer-title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.footer-subtitle {
+  font-family: var(--font-sans);
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.heart-container {
+  margin: 3rem 0;
+}
+
+.pulsing-heart {
+  animation: heartPulse 1.5s infinite ease-in-out;
+}
+
+@keyframes heartPulse {
+  0% { transform: scale(1); }
+  15% { transform: scale(1.15); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.15); }
+  60% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+.footer-note {
+  font-size: 0.85rem;
+  color: #999;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}

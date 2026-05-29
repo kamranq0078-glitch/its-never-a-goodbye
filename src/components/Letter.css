@@ -1,0 +1,65 @@
+.letter-section {
+  background-color: var(--blush-pink);
+  z-index: 10;
+}
+
+.letter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.letter-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  letter-spacing: 0.05em;
+}
+
+.letter-paper {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 4rem 3rem;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  width: 100%;
+  min-height: 400px;
+}
+
+.typewriter-text {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  line-height: 2;
+  color: var(--text-main);
+  white-space: pre-wrap; /* preserves newlines */
+}
+
+/* Caret blinking effect */
+.typewriter-text::after {
+  content: '|';
+  animation: blink 1s step-end infinite;
+  color: var(--blush-pink-dark);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.letter-footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .letter-paper {
+    padding: 2.5rem 1.5rem;
+  }
+  .typewriter-text {
+    font-size: 1.1rem;
+  }
+}
